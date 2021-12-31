@@ -144,16 +144,11 @@ conda list
 pip list
 ```
 
-
- 
+아래 에러가 떴을 때는 pip를 최신 버전으로 업그레이드 하려했지만 이미 최신 버전이었다.
 
 
 
 >gen sim error: command errored out with exit status 1:
-
-
-
-가 떴을 때는 pip를 최신 버전으로 업그레이드 하려했지만 이미 최신 버전이었다.
 
 
 
@@ -190,7 +185,7 @@ github push 에러 이후 가장 시간을 많이 잡아먹은 에러 같다. (�
 
 ***************************
 
-+
+\+
 
 
 
