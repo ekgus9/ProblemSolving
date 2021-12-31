@@ -49,16 +49,25 @@ git commit --amend -m "input and output"
 
 *******
 >fatal: 'origin' does not appear to be a git repository
+
+
+
 >fatal: Could not read from remote repository.
 
+
+
 이러한 오류가 뜬다면 다음 코드를 입력해준다. (주소는 push하고 싶은 repository 주소로 입력)
+
 ```
 git remote add origin https://github.com/ekgus9/ProblemSolving.git
 ```
+
 ************
 
 >Author identity unknown
 >\*\*\* Please tell me who you are.
+
+
 
 위 오류는 가끔 뜨는데, 자신의 이메일과 이름을 입력하면 해결된다.
 
