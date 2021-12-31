@@ -28,7 +28,7 @@ git push -f origin main
 
 *********
 
-깃허브에 push할 때는 다음 순서 대로만 하면 아무 이상이 없었다.
+깃허브에 push할 때는 다음 순서대로만 하면 아무 이상이 없었다.
 
 ```
 git init
@@ -60,7 +60,7 @@ git remote add origin https://github.com/ekgus9/ProblemSolving.git
 >Author identity unknown
 >\*\*\* Please tell me who you are.
 
-위 오류는 가끔 계정이 뜨는데, 자신의 이메일과 이름을 입력하면 해결된다.
+위 오류는 가끔 뜨는데, 자신의 이메일과 이름을 입력하면 해결된다.
 
 ```
 git config --global user.email "dhaabb55@naver.com"
@@ -69,7 +69,7 @@ git config --global user.name "ekgus9"
 
 ********
 
-아래 코드를 그대로 입력해도 요즘은 잘 push 된다.
+요즘은 아래 코드를 그대로 입력해도 잘 push 된다.
 
 ```
 git init
