@@ -137,12 +137,16 @@ conda install -c anaconda gensim
 
 
 
-후자는 gensim이 설치도 되었고, module list에도 있지만 계속 떴다.
+후자는 gensim이 설치도 되었고, 다음 코드를 실행시키면 나타나는 module list에도 있지만 계속 떴다.
 
 ```
 conda list
 pip list
 ```
+
+
+
+
 
 >gen sim error: command errored out with exit status 1:
 
