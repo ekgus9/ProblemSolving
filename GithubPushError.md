@@ -100,5 +100,16 @@ git status
 
 위 명령어를 통해 git branch나 add, commit 상태를 알아볼 수 있다.
 
+*************
 
+> fatal: remote origin already exists.
+
+
+
+해당 에러는 기존 레파지토리와의 연결을 끊고 새 주소를 입력해주어야 한다.
+
+```
+git remote remove origin
+git remote add origin https://github.com/ekgus9/ProblemSolving.git
+```
 
