@@ -10,7 +10,7 @@
 
 
 
-                                                              
+                                                              `
 
 
 
@@ -20,10 +20,9 @@
 submission.to_csv('./titanic_submission.csv')
 ```
 
-↓
+                                   ↓
 
 ```
 submission.to_csv('./titanic_submission.csv', index = False)
 ```
-
-=======================
+---------------------------
