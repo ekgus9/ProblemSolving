@@ -79,6 +79,19 @@ git config --global user.email "dhaabb55@naver.com"
 git config --global user.name "ekgus9"
 ```
 
+*************
+
+> fatal: remote origin already exists.
+
+
+
+해당 에러는 기존 레파지토리와의 연결을 끊고 새 주소를 입력해주어야 한다.
+
+```
+git remote remove origin
+git remote add origin https://github.com/ekgus9/ProblemSolving.git
+```
+
 ********
 
 요즘은 아래 코드를 그대로 입력해도 잘 push 된다.
@@ -100,16 +113,4 @@ git status
 
 위 명령어를 통해 git branch나 add, commit 상태를 알아볼 수 있다.
 
-*************
-
-> fatal: remote origin already exists.
-
-
-
-해당 에러는 기존 레파지토리와의 연결을 끊고 새 주소를 입력해주어야 한다.
-
-```
-git remote remove origin
-git remote add origin https://github.com/ekgus9/ProblemSolving.git
-```
 
