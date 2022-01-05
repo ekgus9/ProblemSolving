@@ -20,7 +20,7 @@
 submission.to_csv('./titanic_submission.csv')
 ```
 
-                ↓
+                     ↓
 
 
 ```
