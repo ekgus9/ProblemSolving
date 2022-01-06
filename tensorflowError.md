@@ -1,4 +1,4 @@
-# Python TensorFlow 설치 Error
+# Python TensorFlow  Error
 
 ```
 pip install tensorflow
@@ -44,6 +44,13 @@ pip install "numpy<1.17"
 참고: <https://sheepone.tistory.com/126>
 
 -------------
+
+
+
+\+
+
+
+
 
 tensorflow는 2.0으로 업데이트 되면서 Session과 placeholder가 사라졌다. 
 
