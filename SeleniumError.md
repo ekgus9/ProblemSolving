@@ -13,3 +13,5 @@ options = webdriver.ChromeOptions()
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
 driver = webdriver.Chrome("<chrome driver 경로>",options=options)
 ```
+
+참고 : <https://althoughh.tistory.com/82>
