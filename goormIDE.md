@@ -31,3 +31,5 @@ $ netstat -tnlp
 ```
 $ sudo kill -9 <PID>
 ```
+
+참고 : <https://joft.site/143>
