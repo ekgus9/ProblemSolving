@@ -199,3 +199,21 @@ model = Word2Vec(sentences=lst_excel, size=100, window=5, min_count=5, workers=4
 
 
 
+*******************************8
+
+\+
+
+
+
+>Gensim Error: AttributeError: The vocab attribute was removed from KeyedVector in Gensim 4.0.0.
+
+
+
+이 에러는 'model.wv.vocab'을 사용해서 나타나는 에러로, 아래와 같이 변경하면 해결된다.
+
+```
+model.wv.key_to_index
+```
+참고 : <https://programmerah.com/gensim-error-attributeerror-the-vocab-attribute-was-removed-from-keyedvector-in-gensim-4-0-0-39145/>
+
+
