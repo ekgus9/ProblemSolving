@@ -199,7 +199,7 @@ model = Word2Vec(sentences=lst_excel, size=100, window=5, min_count=5, workers=4
 
 
 
-*******************************8
+*******************************
 
 \+
 
