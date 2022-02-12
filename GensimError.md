@@ -209,7 +209,7 @@ model = Word2Vec(sentences=lst_excel, size=100, window=5, min_count=5, workers=4
 
 
 
-이 에러는 'model.wv.vocab'을 사용해서 나타나는 에러로, 아래와 같이 변경하면 해결된다.
+이 에러는 'model.wv.vocab'을 사용해서 나타나는 에러로, 아래와 같이 변경하면 해결된다. (버전 4.0 이상 적용)
 
 ```
 model.wv.key_to_index
