@@ -2,7 +2,7 @@
 
 
 
-1. python3 manage.py runserver 무응답
+### 1. python3 manage.py runserver 무응답
 
 ```
 >> python3 manage.py runserver 
@@ -22,7 +22,7 @@ python manage.py runserver --noreload
 
 
 
-2. RuntimeError: Model class polls.models.Post doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+### 2. RuntimeError: Model class polls.models.Post doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
 
 
 
