@@ -22,3 +22,19 @@ python manage.py runserver --noreload
 
 
 
+2. RuntimeError: Model class polls.models.Post doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
+
+
+
+apps.py에서
+
+
+
+![image](https://user-images.githubusercontent.com/89879599/153887808-6cb3877a-ad41-462c-b8c8-543e556cf6f4.png)
+
+
+
+name을 apps이 속한 폴더명으로 명명하면 해결된다.
+
+
+
