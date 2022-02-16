@@ -22,6 +22,12 @@ python manage.py runserver --noreload
 
 
 
+\+ 아래 코드로 해도 잘 작동하였다. 'python3'가 문제였나 보다.
+
+```
+python manage.py runserver
+```
+
 ### 2. RuntimeError: Model class polls.models.Post doesn't declare an explicit app_label and isn't in an application in INSTALLED_APPS.
 
 
