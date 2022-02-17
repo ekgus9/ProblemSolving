@@ -44,3 +44,27 @@ name을 apps이 속한 폴더명으로 명명하면 해결된다.
 
 
 
+3. pk를 int로 다루기
+
+
+
+pk는 primary key의 약자로 model에서 찍어낸 수많은 객체를 구분할 수 있는 구분자이다. 이는 그 자체로는 int가 아니지만 int 형로 변경하여 사용할 수 있다. 
+
+
+
+- polls/urls.py파일에서 path를 줄 때 아래와 같은 형태로 사용하여 서버 주소를 'URL:80/blog/숫자' 형태로 만들 수 있다. 
+
+```
+path('blog/<int:pk>/',posting, name="posting")
+```
+
+- polls/views.py 파일에서 함수를 정의할 시 아래와 같이 pk를 int로 넣어 사용할 수 있다.
+
+```
+def posting(request, pk:int):
+```
+
+- 이 외의 상황에서는 'int(pk)를 통해 pk를 int로 자유롭게 활용할 수 있다.
+
+
+
