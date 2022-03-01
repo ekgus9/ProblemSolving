@@ -56,3 +56,54 @@ filezilla : <https://filezilla-project.org/>
 
 
 위 정보를 모두 입력하고 연결 버튼을 누르면 연결이 된다. 메인 창에서 왼쪽은 로컬 디렉토리를, 오른쪽은 우분투 디렉토리를 관리할 수 있게 된다. 
+
+
+
+참고 : <https://jow1025.tistory.com/306>
+
+
+
+# AWS EC2 우분투에 selenium 설치
+
+
+
+```
+$ sudo apt-get install python-pip
+$ sudo pip install selenium
+```
+
+셀레니움은 위 코드로 설치가 된다. 그러나 셀레니움은 크롬을 이용하는 모듈이기 때문에 크롬과 크롬 드라이버를 설치해줘야 한다.
+
+
+
+- 크롬 설치 
+
+```
+$ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+$ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+$ sudo apt-get update
+$ sudo apt-get install google-chrome-stable
+```
+
+- chromedriver 설치
+
+
+
+먼저 크롬의 버전을 확인해야한다.
+
+```
+$ google-chrome --version
+```
+
+그리고 <https://chromedriver.chromium.org/downloads> 에 들어가 어느 버전을 다운 받아야 할지 확인한다. 아래 코드에서 76.0.3809.68 부분을 자신의 버전으로 바꾸고 코드를 실행시킨다. 오류없이 모두 실행되었다면 정상적으로 설치된 것이다. 
+
+```
+$ wget -N http://chromedriver.storage.googleapis.com/76.0.3809.68/chromedriver_linux64.zip -P ~/Downloads
+$ unzip ~/Downloads/chromedriver_linux64.zip
+
+$ sudo pip install xlrd
+$ sudo apt-get install xvfb
+$ sudo pip install pyvirtualdisplay
+```
+
+참고 : <https://dvpzeekke.tistory.com/1>
