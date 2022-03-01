@@ -6,7 +6,16 @@
 
 
 
---------------------------
+# AWS 서버 실행
+
+```
+cd C:\Users\user\OneDrive\바탕 화면\whdrkd  # keypair.pem가 있는 곳으로 이동
+ssh -i "keypair.pem" ubuntu@ec2-3-93-181-166.compute-1.amazonaws.com  # 인스턴스 연결에 있는 ssh 명령어
+cd 디렉토리 이름/  # 실행시킬 파일이 있는 폴더로 이동
+sudo python3 application.py  # 서버 실행
+```
+
+# 리눅스 문법
 
 
 
@@ -18,7 +27,7 @@
 
 
 
-- 디렉토리 이동은 윈도우에서 원래쓰던 cd 문법과 동일하다.
+- 디렉토리 이동은 윈도우에서 원래쓰던 cd 문법과 동일하다. (이전 디렉토리로 이동 : cd ..)
 
 
 
@@ -27,6 +36,12 @@
 ```
 rm -r <디렉토리 이름>
 ```
+
+만약 'rm: cannot remove directory/: Permission denied' 의 에러가 떴다면 앞에 'sudo'를 붙이면 강제 삭제된다.
+
+
+
+- 디렉토리 정보 보기 : ls
 
 
 
@@ -95,7 +110,7 @@ $ sudo apt-get install google-chrome-stable
 $ google-chrome --version
 ```
 
-그리고 <https://chromedriver.chromium.org/downloads> 에 들어가 어느 버전을 다운 받아야 할지 확인한다. 아래 코드에서 76.0.3809.68 부분을 자신의 버전으로 바꾸고 코드를 실행시킨다. 오류없이 모두 실행되었다면 정상적으로 설치된 것이다. 
+그리고 <https://chromedriver.chromium.org/downloads> 에 들어가 어느 버전을 다운 받아야 할지 확인한다. 아래 코드에서 76.0.3809.68 부분을 자신의 버전으로 바꾸고 코드를 실행시킨다. 
 
 ```
 $ wget -N http://chromedriver.storage.googleapis.com/76.0.3809.68/chromedriver_linux64.zip -P ~/Downloads
@@ -106,4 +121,19 @@ $ sudo apt-get install xvfb
 $ sudo pip install pyvirtualdisplay
 ```
 
+- 정상 설치 확인법
+
+```
+$ python
+
+>>> from selenium import webdriver
+>>> from pyvirtualdisplay import Display
+>>> display = Display(visible=0, size=(1024, 768))
+>>> display.start()
+>>> path = '/home/ubuntu/Downloads/chromedriver'
+>>> browser = webdriver.Chrome(path)
+```
+
 참고 : <https://dvpzeekke.tistory.com/1>
+
+
