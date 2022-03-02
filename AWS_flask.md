@@ -137,3 +137,34 @@ $ python
 참고 : <https://dvpzeekke.tistory.com/1>
 
 
+
+# AWS EC2에서 파이썬 서버 항상 실행
+
+
+
+서버가 구동된 상태에서 다음을 순서대로 실행시킨다.
+
+
+
+1. Ctrl + Z : 프로세스 중지하기
+
+
+
+2. bg : 백그라운드에서 서버를 다시 구동시키기
+
+
+
+3. disown -h : 소유권 포기하기
+
+
+
+### \+ 항상 실행된 서버 중단 방법 ('OSError: [Errno 98] Address already in use' 오류 해결법)
+
+
+
+1. sudo lsof -i :5000 : PID 확인 (5000은 자신이 사용 중인 포트 번호)
+
+
+
+2. sudo kill -9 9066 : kill 명령어로 -SIGKILL(-9) 을 PID에 전달 (9066은 순서 1에서 확인한 PID)
+
